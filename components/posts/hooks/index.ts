@@ -91,6 +91,7 @@ export const useUser = () => {
  * @returns {string} currentUserId - The current user id
  * @returns {string} searchInput - The search input value
  * @returns {Function} setSearchInput - The function to set the search input value
+ * @returns {Function} updateQuery - The function to update the query parameters
  */
 
 export function useSearch() {

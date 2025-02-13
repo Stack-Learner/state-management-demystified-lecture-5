@@ -9,7 +9,9 @@ type QueryConfig = {
 /**
  * Hook to manage query parameters
  *
- * @param {QueryConfig} config - The query configuration
+ * @param {Record<string, string>} defaultValues - The default values for the query parameters
+ * @param {Record<string, string>} resetValues - The reset values for the query parameters
+ * @param {string} baseUrl - The base URL
  * @returns {Object} The query parameters
  */
 
