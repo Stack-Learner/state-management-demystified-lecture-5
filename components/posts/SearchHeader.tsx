@@ -1,4 +1,5 @@
-import { useQueryParams } from '@/hooks/use-query-params';
+'use client';
+
 import { Input } from '../ui/input';
 import {
 	Select,
@@ -20,8 +21,8 @@ import { useSearch, useUser } from './hooks';
 
 export const SearchHeader = () => {
 	const { users } = useUser();
-	const { searchInput, setSearchInput, currentUserId } = useSearch();
-	const { updateQuery } = useQueryParams();
+	const { searchInput, setSearchInput, currentUserId, updateQuery } =
+		useSearch();
 
 	return (
 		<div className="flex gap-4">

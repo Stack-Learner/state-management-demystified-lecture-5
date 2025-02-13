@@ -1,4 +1,5 @@
-import { useQueryParams } from '@/hooks/use-query-params';
+'use client';
+
 import { Button } from '../ui/button';
 import { usePosts, useSearch } from './hooks';
 
@@ -12,8 +13,7 @@ import { usePosts, useSearch } from './hooks';
 
 export const Pagination = () => {
 	const { totalPages } = usePosts();
-	const { updateQuery } = useQueryParams();
-	const { currentPage } = useSearch();
+	const { currentPage, updateQuery } = useSearch();
 
 	return (
 		<div className="flex justify-center gap-2">

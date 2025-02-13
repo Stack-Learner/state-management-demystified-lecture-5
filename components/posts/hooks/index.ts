@@ -104,6 +104,7 @@ export function useSearch() {
 			uid: 'All',
 			page: '1',
 		},
+		baseUrl: '/posts',
 	});
 
 	const currentPage = Number(getParam('page'));
@@ -125,5 +126,6 @@ export function useSearch() {
 		currentUserId,
 		searchInput,
 		setSearchInput,
+		updateQuery,
 	};
 }
